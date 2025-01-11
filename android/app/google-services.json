@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "668764689770",
+    "project_id": "my-library-a2671",
+    "storage_bucket": "my-library-a2671.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668764689770:android:df17bc321edeb6ab758113",
+        "android_client_info": {
+          "package_name": "com.dss.library"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668764689770-8g5a04jfkgk9rds4nqut5as96e2htg3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dss.library",
+            "certificate_hash": "f17b0ae097a1d9ff932925dd3a5beff7e93a9acf"
+          }
+        },
+        {
+          "client_id": "668764689770-5o47vb70a0kod1fmchvme70oqq0fq61m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPFOukzUE2BN-bxZmm22A2W7sjrhdAyyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668764689770-5o47vb70a0kod1fmchvme70oqq0fq61m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "668764689770-jcveo8mvo1rhhdhtuivb9qoatag6cksc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dss.library"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668764689770:android:de20fb68e0619eb4758113",
+        "android_client_info": {
+          "package_name": "com.project.library_offline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668764689770-0gejhj11bnn0aqeeu6nqk4l58c7afvn5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.library_offline",
+            "certificate_hash": "f17b0ae097a1d9ff932925dd3a5beff7e93a9acf"
+          }
+        },
+        {
+          "client_id": "668764689770-5o47vb70a0kod1fmchvme70oqq0fq61m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPFOukzUE2BN-bxZmm22A2W7sjrhdAyyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668764689770-5o47vb70a0kod1fmchvme70oqq0fq61m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "668764689770-jcveo8mvo1rhhdhtuivb9qoatag6cksc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dss.library"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
