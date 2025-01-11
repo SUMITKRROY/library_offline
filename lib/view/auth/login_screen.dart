@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../component/myTextForm.dart';
 import '../../component/mybutton.dart';
-import '../../database/table/seat_allotment_db.dart';
 import '../../database/table/user_profile_db.dart';
 import '../../route/pageroute.dart';
 import '../../utils/image.dart';
@@ -51,6 +50,12 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
         ),
       ),
+
+    floatingActionButton: FloatingActionButton(
+      backgroundColor: Colors.purpleAccent,
+      onPressed: _showHelpAndSupportBottomSheet,
+      child: const Icon(Icons.help_outline, color: Colors.white),
+    ),
     );
   }
 
@@ -201,7 +206,9 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
         ),
       ),
+
     );
+
 }
 
   Widget _buildEmailField() {
@@ -252,7 +259,6 @@ class _LoginScreenState extends State<LoginScreen> {
           } else {
             _showSnackbar(context, 'You are not authorized');
           }
-
           setState(() {
             _isLoading = false; // Stop loading
           });
@@ -333,7 +339,45 @@ class _LoginScreenState extends State<LoginScreen> {
       return false;
     }
   }
-
+  void _showHelpAndSupportBottomSheet() {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.deepPurple.withOpacity(0.9),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (context) {
+        return Padding(
+          padding: EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                'Need Help?',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20.sp,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(height: 20.h),
+              IconButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, RoutePath.helpAndSupport);
+                },
+                icon: const Icon(Icons.help, color: Colors.white),
+                iconSize: 40.sp,
+              ),
+              Text(
+                'Go to Help and Support',
+                style: TextStyle(color: Colors.white),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
   Future<void> _checkDatabaseAndNavigate(BuildContext context) async {
     ProfileTable profileTable = ProfileTable();
     try {

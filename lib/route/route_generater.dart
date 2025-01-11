@@ -7,6 +7,7 @@ import 'package:library_offline/route/pageroute.dart';
 
 import '../splash.dart';
 import '../view/admin.dart';
+import '../view/help_&_support.dart';
 import '../view/member detail/member.dart';
 import '../view/profile.dart';
 import '../view/auth/register_screen.dart';
@@ -80,6 +81,12 @@ class MyRoutes {
       case RoutePath.reminderPage:
         return MaterialPageRoute(
           builder: (_) => ReminderPage(),
+        );
+
+    /// ReminderPage Screen
+      case RoutePath.helpAndSupport:
+        return MaterialPageRoute(
+          builder: (_) => HelpAndSupport(),
         );
 
     // /// Version Screen

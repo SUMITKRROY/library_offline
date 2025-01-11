@@ -11,5 +11,6 @@ class RoutePath {
   static const String profile = "/Profile";
   static const String totalCollection = "/TotalCollection";
   static const String reminderPage = "/ReminderPage";
+  static const String helpAndSupport = "/HelpAndSupport";
 
 }
